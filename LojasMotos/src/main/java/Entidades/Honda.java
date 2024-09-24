@@ -1,12 +1,27 @@
-package Entidades;
+package entidades;
 
-public class Honda {
+public class Honda implements Motos {
         public String nome;
-        public  String cilindrada;
+        public  String cilindradas;
         public String cor;
         public Honda () {
             nome = "CBX (Honda)";
-            cilindrada = " 500";
+            cilindradas = " 500";
             cor = "Azul";
         }
+
+    @Override
+    public String getNome() {
+        return nome;
+    }
+
+    @Override
+    public String getCor() {
+        return cor;
+    }
+
+    @Override
+    public String getCilindradas() {
+        return cilindradas;
+    }
 }
